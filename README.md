@@ -17,7 +17,7 @@
 
 | Nama | NIM | Username GitHub | Kontribusi utama |
 |---|---|---|---|
-| ✍️ | ✍️ | ✍️ | ✍️ misal: menjalankan eksperimen, menulis Bagian 3 |
+| Sely Sabila Permata Hael | 123430050 | Sely20 | ✍️ misal: menjalankan eksperimen, menulis Bagian 3 |
 | ✍️ | ✍️ | ✍️ | ✍️ |
 | ✍️ | ✍️ | ✍️ | ✍️ |
 
@@ -44,8 +44,8 @@ Augmentasi apa yang membantu U-Net menemukan polip pada citra kolonoskopi, dan a
 | Skenario | Augmentasi (kode) | Alasan klinis | Hipotesis: Dice naik/turun/sama? |
 |---|---|---|---|
 | Tanpa augmentasi | — | Pembanding | — |
-| ✍️ | ✍️ `v2....` | ✍️ | ✍️ |
-| ✍️ | ✍️ `v2....` | ✍️ | ✍️ |
+| Flip | v2.RandomHorizontalFlip() | ✍️ | Sama |
+| Hue (Rona warna) | v2.ColorJitter(hue=0.1) | Tidak boleh berlebihan atau kurang, digunakan untuk menentukan objeknya dimana | Dice naik |
 
 Contoh augmentasi yang dicoba:
 
