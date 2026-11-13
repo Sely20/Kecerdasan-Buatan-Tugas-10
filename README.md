@@ -18,7 +18,7 @@
 | Nama | NIM | Username GitHub | Kontribusi utama |
 |---|---|---|---|
 | Sely Sabila Permata Hael | 123430050 | Sely20 | ✍️ misal: menjalankan eksperimen, menulis Bagian 3 |
-| ✍️ | ✍️ | ✍️ | ✍️ |
+| Ulfah Zakiyah Sa'adah | 123430057 | Ulfah-123430057 | ✍️ |
 | ✍️ | ✍️ | ✍️ | ✍️ |
 
 ## 1. Pertanyaan
