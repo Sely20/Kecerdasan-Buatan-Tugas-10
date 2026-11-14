@@ -99,6 +99,8 @@ Meskipun kedua jenis augmentasi menghasilkan peningkatan rata-rata Dice, hasil t
 
 Secara keseluruhan, augmentasi flip memberikan hasil terbaik berdasarkan rata-rata Dice dan IoU pada konfigurasi eksperimen yang digunakan, diikuti oleh augmentasi kecerahan dan kontras, sedangkan skenario tanpa augmentasi menghasilkan nilai terendah. Namun, kesimpulan ini terbatas pada penggunaan dataset Kvasir-SEG, 200 citra latih per ulangan, ukuran citra 128 x 128 piksel, model U-Net mini, serta tiga kali pengulangan untuk setiap skenario. Dengan demikian, hasil eksperimen menunjukkan bahwa pemilihan jenis augmentasi berpengaruh terhadap hasil segmentasi polip, tetapi efektivitasnya tetap bergantung pada karakteristik citra dan konfigurasi model yang digunakan.
 
+Hasil perbandingan ini belum dapat digunakan untuk menyatakan adanya perbedaan performa yang signifikan secara statistik karena evaluasi hanya dilakukan melalui tiga kali pengulangan tanpa pengujian signifikansi statistik.
+
 ## 7. Pembagian kerja
 
 <!-- Siapa mengerjakan apa. Penilaian proses kerja dilihat dari riwayat commit tiap anggota. -->
