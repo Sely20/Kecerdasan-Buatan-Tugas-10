@@ -36,21 +36,26 @@ Augmentasi apa yang membantu U-Net menemukan polip pada citra kolonoskopi, dan a
 
 ![Contoh data](hasil/contoh_data.png)
 
+
 ## 3. Skenario augmentasi & hipotesis
 
-<!-- Tulis bagian ini SEBELUM menjalankan eksperimen. Commit dulu, baru jalankan.
+<!-- Tulis bagian ini SEBELUM menjalankan eksperimen final. Commit dulu, baru jalankan.
      Alasan klinis = kenapa variasi ini mungkin (atau tidak mungkin) terjadi pada kolonoskopi sungguhan. -->
 
 | Skenario | Augmentasi (kode) | Alasan klinis | Hipotesis: Dice naik/turun/sama? |
 |---|---|---|---|
-| Tanpa augmentasi | — | Pembanding | — |
-| Flip | v2.RandomHorizontalFlip() | ✍️ | Sama |
-| Hue (Rona warna) | v2.ColorJitter(hue=0.1) | Tidak boleh berlebihan atau kurang, digunakan untuk menentukan objeknya dimana | Dice naik |
+| Tanpa augmentasi | Tidak menggunakan augmentasi (`None`) | Digunakan sebagai kondisi pembanding untuk mengetahui performa dasar model U-Net. | Menjadi nilai acuan (baseline). |
+| Flip | `v2.RandomHorizontalFlip()` dan `v2.RandomVerticalFlip()` | Orientasi tampilan kamera kolonoskopi dapat bervariasi selama pemeriksaan. Kewajaran flip vertikal perlu dievaluasi. | Diperkirakan naik dibanding baseline. |
+| Kecerahan & kontras | `v2.ColorJitter(brightness=0.3, contrast=0.3)` | Intensitas pencahayaan dan kontras citra kolonoskopi dapat bervariasi selama pemeriksaan. | Diperkirakan naik dibanding baseline. |
 
 Contoh augmentasi yang dicoba:
 
-![Contoh augmentasi](hasil/augmentasi_flip.png)
-<!-- Ganti nama file sesuai skenario kalian (lihat isi folder hasil/). -->
+![Contoh augmentasi Flip](hasil/augmentasi_flip.png)
+
+![Contoh augmentasi Kecerahan dan kontras](hasil/augmentasi_kecerahan_dan_kontras.png)
+
+<!-- Gambar akan tampil setelah file hasil/ dimasukkan ke repository. -->
+
 
 ## 4. Hasil
 
