@@ -30,9 +30,9 @@ Augmentasi apa yang membantu U-Net menemukan polip pada citra kolonoskopi, dan a
 <!-- Isi dari Bagian 2 notebook. Pastikan CEPAT = False untuk hasil akhir. -->
 
 - Dataset: Kvasir-SEG (1000 citra kolonoskopi + mask polip), diperkecil ke 128 × 128 piksel.
-- Data uji: 200 citra (tetap). Data latih: ✍️ citra per ulangan.
-- Model: U-Net mini (±0,5 juta parameter), ✍️ epoch, ✍️ ulangan per skenario.
-- Dijalankan di: ✍️ (misal: Google Colab T4 / laptop CPU / Mac M1).
+- Data uji: 200 citra (tetap). Data latih: 200 citra per ulangan.
+- Model: U-Net mini (±0,5 juta parameter), 40 epoch, 3 ulangan per skenario.
+- Dijalankan di: Google Colab menggunakan GPU.
 
 ![Contoh data](hasil/contoh_data.png)
 
@@ -41,6 +41,7 @@ Augmentasi apa yang membantu U-Net menemukan polip pada citra kolonoskopi, dan a
 
 <!-- Tulis bagian ini SEBELUM menjalankan eksperimen final. Commit dulu, baru jalankan.
      Alasan klinis = kenapa variasi ini mungkin (atau tidak mungkin) terjadi pada kolonoskopi sungguhan. -->
+
 
 | Skenario | Augmentasi (kode) | Alasan klinis | Hipotesis: Dice naik/turun/sama? |
 |---|---|---|---|
@@ -61,7 +62,11 @@ Contoh augmentasi yang dicoba:
 
 <!-- Tempel isi hasil/ringkasan.md di sini. -->
 
-✍️ tempel tabel dari `hasil/ringkasan.md`
+| Skenario | Dice (rata-rata ± sb) | IoU (rata-rata ± sb) | Dice tiap ulangan |
+|---|---|---|---|
+| Tanpa augmentasi | 0.537 ± 0.049 | 0.427 ± 0.046 | 0.506, 0.607, 0.498 |
+| Flip | 0.597 ± 0.056 | 0.496 ± 0.053 | 0.627, 0.646, 0.518 |
+| Kecerahan & kontras | 0.560 ± 0.017 | 0.446 ± 0.011 | 0.535, 0.571, 0.573 |
 
 ![Perbandingan Dice](hasil/perbandingan.png)
 
