@@ -19,7 +19,7 @@
 |---|---|---|---|
 | Sely Sabila Permata Hael | 123430050 | Sely20 | Menyusun analisis peta kesalahan, pembahasan dan kesimpulan hasil eksperimen, serta menyunting README.md., menjalankan eksperimen |
 | Ulfah Zakiyah Sa'adah | 123430057 | Ulfah-123430057 | Menjalankan eksperimen final model U-Net, mengumpulkan dan mendokumentasikan hasil pengujian augmentasi, memperbarui README.md dan visualisasi hasil pada repository GitHub. |
-| Sulthan Rayyanir Rizk | 1234.. | ✍️ | ✍️ |
+| Sulthan Rayyanir Rizk | 12343087 | sulthanrayanir | membimbing teman teman |
 
 ## 1. Pertanyaan
 
